@@ -24,3 +24,12 @@ export const Skeleton = ({ width = "unset", length = 3 }: SkeletonProps) => {
     </div>
   );
 };
+export const HomeSkeleton = ({ length = 4 }: SkeletonProps) => {
+  const skeletions = Array.from({ length }, (_, idx) => (
+    <div key={idx} className="skeleton-loader">
+      <div className="home-skeleton-shape"></div>
+    </div>
+  ));
+
+  return <>{skeletions}</>;
+};

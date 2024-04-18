@@ -55,9 +55,7 @@ const App = () => {
     });
   }, []);
 
-  return loading ? (
-    <Loader />
-  ) : (
+  return (
     
     <Router>
       {/* Header */}

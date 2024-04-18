@@ -317,6 +317,14 @@ $color3: rgb(0, 104, 136);
   border-radius: 4px;
   animation: skeleon-loading 1.5s infinite;
 }
+.home-skeleton-shape {
+  min-height: 350px;
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  animation: skeleon-loading 1.5s infinite;
+}
 
 @keyframes loading-animation {
   to {
