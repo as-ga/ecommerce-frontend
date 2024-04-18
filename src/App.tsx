@@ -40,9 +40,7 @@ const TransactionManagement = lazy(
 );
 
 const App = () => {
-  const { user, loading } = useSelector(
-    (state: RootState) => state.userReducer
-  );
+  const { user } = useSelector((state: RootState) => state.userReducer);
 
   const dispatch = useDispatch();
 
@@ -56,7 +54,6 @@ const App = () => {
   }, []);
 
   return (
-    
     <Router>
       {/* Header */}
       <Header user={user} />
@@ -104,7 +101,6 @@ const App = () => {
             {/* Apps */}
             <Route path="/admin/app/coupon" element={<Coupon />} />
             <Route path="/admin/app/stopwatch" element={<Stopwatch />} />
-            
 
             {/* Management */}
             <Route path="/admin/product/new" element={<NewProduct />} />
@@ -122,7 +118,6 @@ const App = () => {
       </Suspense>
       <Toaster position="bottom-center" />
     </Router>
-  
   );
 };
 
